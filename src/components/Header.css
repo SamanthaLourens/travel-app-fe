@@ -1,0 +1,18 @@
+.header {
+    height: 150px;
+}
+
+.header-color-box {
+    height: 150px;
+    background-color: cornflowerblue;
+    opacity: 0.6;
+}
+
+
+.header-buttons {
+    width: 700px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    left: 550px;
+}

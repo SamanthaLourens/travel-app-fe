@@ -1,22 +1,18 @@
 import React from 'react';
-import Users from './components/users'
+import Users from './components/users';
+import Header from './components/Header';
+import './App.css';
 
 class App extends React.Component {
     state = {
-        users: []
     }
 
-    componentDidMount() {
-        fetch('http://localhost:8080/show-all-users')
-            .then(response => response.json())
-            .then((data) => {this.setState({ users: data })})
-            .catch(console.log)
-    }
 
     render () {
-        return (
-         <Users users = {this.state.users}/>
-        );
+       return (
+           <body class = 'homepage'>
+           <Header/>
+           </body>);
     }
 }
 
